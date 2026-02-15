@@ -5,21 +5,21 @@
 class ClaudeBell < Formula
   desc "Notification sounds for Claude Code"
   homepage "https://github.com/Tiimie1/claude-bell"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Tiimie1/claude-bell/releases/download/v0.1.0/claude-bell_darwin_amd64.tar.gz"
-    sha256 "74ade7b933b4b6d35589e0ed9fec2fcce3350942cdb1368450219444850f391d"
+    url "https://github.com/Tiimie1/claude-bell/releases/download/v0.1.1/claude-bell_darwin_amd64.tar.gz"
+    sha256 "f32e7f5a526beb106ea0ab4af094d77cab3ca4b585ccc068d82eca0333e51275"
 
     def install
       bin.install "claude-bell"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Tiimie1/claude-bell/releases/download/v0.1.0/claude-bell_darwin_arm64.tar.gz"
-    sha256 "e5a7c5298846b32f97c07bccdcbb8027c64ae72ebe998e9ce6737c7bf2ae8e52"
+    url "https://github.com/Tiimie1/claude-bell/releases/download/v0.1.1/claude-bell_darwin_arm64.tar.gz"
+    sha256 "b5c9e088ccd9a0cb42de2866e42c75ff34cd9cbd9bd303cba80fa342fe4a58bf"
 
     def install
       bin.install "claude-bell"
